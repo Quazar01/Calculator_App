@@ -30,10 +30,11 @@ public class Main {
                     case "+":
                         //Do the addition magic.
                         addition(scanner);
+                        
                         break;
                     case "-":
                         // Do the subtraction magic.
-                        subtraction(scanner);
+                        System.out.println("Doing Subtraction");
                         break;
                     case "*":
                         // Do the multiplication magic.
@@ -65,19 +66,5 @@ public class Main {
         }
 
         System.out.println("Result: " + sum);
-    }
-
-    public static void subtraction (Scanner scanner){
-        System.out.println("Enter numbers to subtract (separated by spaces): ");
-        String[] inputs = scanner.nextLine().split(" ");
-        // Set the result as the first entered number.
-        double result = Double.parseDouble(inputs[0]);
-
-        // Subtract the next number from result, until we reach the end of the array.
-        for (int i = 1; i < inputs.length; i++){
-            result -= Double.parseDouble(inputs[i]);
-        }
-
-        System.out.println("Result: " + result);
     }
 }
