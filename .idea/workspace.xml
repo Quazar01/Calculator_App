@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4581172-4aa7-4c4c-86c3-1d928a6f2787" name="Changes" comment="Create the project, and validate user input.">
+    <list default="true" id="a4581172-4aa7-4c4c-86c3-1d928a6f2787" name="Changes" comment="Performing addition on multiple numbers.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +16,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Quazar01/Calculator_App.git",
+    "accountId": "0bf3e130-88b8-4ef4-b126-6984b7bdb578"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 1
 }]]></component>
@@ -51,11 +58,20 @@
       <option name="project" value="LOCAL" />
       <updated>1717490985038</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Performing addition on multiple numbers.">
+      <option name="closed" value="true" />
+      <created>1717491503470</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717491503470</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create the project, and validate user input." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create the project, and validate user input." />
+    <MESSAGE value="Performing addition on multiple numbers." />
+    <option name="LAST_COMMIT_MESSAGE" value="Performing addition on multiple numbers." />
   </component>
 </project>
