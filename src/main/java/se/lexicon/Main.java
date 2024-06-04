@@ -42,7 +42,7 @@ public class Main {
                         break;
                     case "/":
                         // Again the magic goes in here.
-                        System.out.println("Doing Subtraction");
+                        division(scanner);
                         break;
                     default:
                         System.out.println("Invalid operation!");
@@ -69,7 +69,7 @@ public class Main {
     }
 
 
-    private static void subtraction(Scanner scanner) {
+    public static void subtraction(Scanner scanner) {
         System.out.println("Enter numbers to subtract (separated by spaces):");
         String[] inputs = scanner.nextLine().split(" ");
         // Set the result as the first number.
@@ -82,13 +82,28 @@ public class Main {
         System.out.println("Result: " + result);
     }
 
-    private static void multiplication(Scanner scanner) {
+    public static void multiplication(Scanner scanner) {
         System.out.print("Enter the first number:");
         double num1 = Double.parseDouble(scanner.nextLine());
         System.out.println("\nEnter the second number:");
         double num2 = Double.parseDouble(scanner.nextLine());
 
         System.out.println("\nResult: " + (num1 * num2));
+    }
+
+    public static void division(Scanner scanner){
+        System.out.print("Enter the first number: ");
+        double num1 = Double.parseDouble(scanner.nextLine());
+        System.out.print("\nEnter the second number: ");
+        double num2 = Double.parseDouble(scanner.nextLine());
+
+        // Check if the second number is zero.
+        if (num2 == 0){
+            System.out.println("Cannot divide by zero!");
+        } else {
+
+            System.out.print("\nResult: " + num1 / num2);
+        }
     }
 
 }
