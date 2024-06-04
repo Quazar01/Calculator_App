@@ -34,11 +34,11 @@ public class Main {
                         break;
                     case "-":
                         // Do the subtraction magic.
-                        System.out.println("Doing Subtraction");
+                        subtraction(scanner);
                         break;
                     case "*":
                         // Do the multiplication magic.
-                        System.out.println("Doing Multiplication");
+                        multiplication(scanner);
                         break;
                     case "/":
                         // Again the magic goes in here.
@@ -67,4 +67,28 @@ public class Main {
 
         System.out.println("Result: " + sum);
     }
+
+
+    private static void subtraction(Scanner scanner) {
+        System.out.println("Enter numbers to subtract (separated by spaces):");
+        String[] inputs = scanner.nextLine().split(" ");
+        // Set the result as the first number.
+        double result = Double.parseDouble(inputs[0]);
+        // Subtract the next number from result, until we reach the end of the array.
+        for (int i = 1; i < inputs.length; i++) {
+            result -= Double.parseDouble(inputs[i]);
+        }
+
+        System.out.println("Result: " + result);
+    }
+
+    private static void multiplication(Scanner scanner) {
+        System.out.print("Enter the first number:");
+        double num1 = Double.parseDouble(scanner.nextLine());
+        System.out.println("\nEnter the second number:");
+        double num2 = Double.parseDouble(scanner.nextLine());
+
+        System.out.println("\nResult: " + (num1 * num2));
+    }
+
 }
