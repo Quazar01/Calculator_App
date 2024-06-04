@@ -29,7 +29,7 @@ public class Main {
                 switch (operation){
                     case "+":
                         //Do the addition magic.
-                        System.out.println("Doing Addition");
+                        addition(scanner);
                         break;
                     case "-":
                         // Do the subtraction magic.
@@ -52,5 +52,18 @@ public class Main {
             }
 
         }
+    }
+
+    public static void addition(Scanner scanner){
+        System.out.println("Enter the numbers to add (seperated by spaces): ");
+        String[] inputs = scanner.nextLine().split(" ");
+        double sum = 0;
+
+        // Take each number and add to the next one.
+        for (String number : inputs) {
+            sum += Double.parseDouble(number);
+        }
+
+        System.out.println("Result: " + sum);
     }
 }
